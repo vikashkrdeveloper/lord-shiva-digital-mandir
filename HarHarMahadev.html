@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Har Har Mahadev 🔱</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #1a0e03, #4a2e1f);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 184, 108, 0.2);
+            padding: 20px 30px;
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #ffcc66;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #ffbb00, 0 0 20px #ffcc00;
+            font-weight: bold;
+        }
+
+        .shivling-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .shivling-top {
+            position: relative;
+            background: linear-gradient(to bottom, #000000, #333333);
+            height: 120px;
+            width: 90px;
+            border-radius: 50% 50% 0 0;
+            box-shadow: 1px 0px 50px rgba(224, 155, 5, 0.623);
+            transition: all 0.3s ease-in-out;
+            animation: shivlingPulseGlow 7s infinite;
+        }
+
+
+        .shivling-center {
+            width: 140px;
+            height: 30px;
+            position: relative;
+            border-radius: 10% 10% 40% 40%;
+            margin-top: -10px;
+            background: linear-gradient(to bottom, #000000, #333333);
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .shivling-bottom {
+            width: 140px;
+            height: 15px;
+            border-radius: 50%;
+            margin-top: -5px;
+            background: linear-gradient(to bottom, #000000, #333333);
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .shivling-tilak-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: calc(50% - 20px);
+            left: calc(50% - 22px);
+            gap: 2px;
+        }
+
+        .shivling-tilak {
+            width: 45px;
+            height: 6px;
+            background: #ffcc66;
+            border-radius: 40%;
+            box-shadow: 0 0 5px rgba(255, 204, 102, 0.8);
+        }
+
+        .shivlong-red-tilak {
+            width: 10px;
+            height: 10px;
+            background: #e4040f;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            box-shadow: 0 0 5px rgba(228, 4, 15, 0.8);
+            z-index: 1;
+        }
+
+        .mantra {
+            font-size: 1em;
+            color: #f5e7d0;
+            margin-top: 20px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .shivling-top {
+                width: 70px;
+                height: 80px;
+            }
+
+            .shivling-center {
+                width: 100px;
+                height: 25px;
+            }
+
+            .shivling-bottom {
+                width: 100px;
+                height: 18px;
+            }
+
+            .shiv-trishul {
+                height: 100px;
+            }
+
+            .mantra {
+                font-size: 0.9em;
+            }
+        }
+
+        @keyframes pulseGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 10px rgba(255, 184, 108, 0.4),
+                    0 0 20px rgba(255, 184, 108, 0.6);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(255, 204, 150, 0.8),
+                    0 0 40px rgba(255, 220, 150, 0.9);
+            }
+        }
+
+        @keyframes shivlingPulseGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 10px rgba(224, 155, 5, 0.4),
+                    0 0 20px rgba(224, 155, 5, 0.6);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(224, 155, 5, 0.8),
+                    0 0 40px rgba(224, 155, 5, 0.9);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>ॐ नमः शिवाय</h1>
+
+        <div class="shivling-container">
+            <div class="shivling-top">
+                <div class="shivling-tilak-container">
+                    <div class="shivling-tilak"></div>
+                    <div class="shivling-tilak">
+                        <div class="shivlong-red-tilak"></div>
+                    </div>
+                    <div class="shivling-tilak"></div>
+                </div>
+                <div class="shiv-trishul-container">
+                    <div class="shiv-trishul"></div>
+                </div>
+            </div>
+            <div class="shivling-center"></div>
+            <div class="shivling-bottom"></div>
+
+        </div>
+
+        <div class="mantra">
+            "Shivoham Shivoham<br>
+            Har Har Mahadev<br>
+            May Lord Shiva bless you with inner strength, peace, and spiritual enlightenment."
+        </div>
+    </div>
+
+    <!-- 🎵 Audio: Fix autoplay by muting first -->
+    <audio autoplay loop volume="0.1">
+        <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>
